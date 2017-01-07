@@ -1,0 +1,120 @@
+#myhead{
+	width:55px;
+	cursor: pointer;
+}
+.talk .hedia .head{
+	cursor: pointer;
+}
+.nickname{
+	font-weight:500;
+	padding:5px 0 0 10px;
+}
+.msgnum{
+	z-index: 9999;
+	position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 0 5px;
+    min-width: 17px;
+    height: 17px;
+    color: #fff;
+    background: red;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(12, 12, 12, 0.47);
+}
+.offline { 
+	z-index: 1;
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%); 
+	-ms-filter: grayscale(100%); 
+	-o-filter: grayscale(100%); 
+	filter: grayscale(100%); 
+	filter: gray; 
+} 
+.info{
+	position: absolute;
+	left: 80px;
+	top:5px;
+	overflow: auto;
+	height: 60px;
+}
+.my-info .panel-body{
+	padding:5px;
+}
+.del{
+	color:red;
+	float:right;
+}
+.msg,.friends>img,.friends>span{
+	cursor: pointer;
+}
+.talk .btn{
+	height: 54px;
+	border-top-right-radius: 0;
+}
+.talk .input-group{
+	margin:-1px;
+}
+.talk textarea{
+	resize: none;
+}
+.dialog{
+	height: 380px;
+	overflow-y: auto;
+	overflow-x:hidden;
+	padding-bottom: 10px;
+}
+.dia{
+	font-family: "微软雅黑";
+	font-size:12px;
+	word-wrap:break-word;
+	margin:10px 0;
+	position: relative;
+}
+.dia .head{
+	margin-top: 8px;
+	width: 27px;
+    border-radius: 50px;
+    position: absolute;
+}
+.mydia .head{
+	right: 10px;
+}
+.hedia .head{
+	left: 10px;
+}
+.log{
+	min-height: 34px;
+	max-width: 250px;
+	position: absolute;
+	border-radius: 5px;
+	padding:8px;
+	margin:10px auto 0;
+}
+
+.log:before{
+	content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    z-index: 9;
+    top: 7px;
+}
+.hedia .log{
+	left: 50px;
+	background: #ceecff;
+}
+.mydia .log{
+	right:50px;
+	background: #ffcedc;
+}
+.mydia .log:before{
+    border-color: transparent transparent transparent #ffcedc;
+    right: -15px;
+​} 
+.hedia .log:before{
+    border-color: transparent #ceecff transparent transparent ;
+    left: -15px;
+​} 
