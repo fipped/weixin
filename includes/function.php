@@ -31,7 +31,12 @@ function isLogin(){
 	return isset($_SESSION["weixin"])&&$_SESSION["weixin"];
 }
 
-function getUser($weixin){
+function isAdmin(){
+  return isset($_SESSION["admin"])&&$_SESSION["admin"];
+}
+
+function getUser($weixin)//通过微信查找用户所有信息
+{
 	global $pdo;
 	$sth=$pdo->prepare("SELECT * FROM user WHERE weixin=?");
 	$sth->execute(array($weixin));

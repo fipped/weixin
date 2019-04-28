@@ -3,7 +3,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 ob_implicit_flush();
 include('includes/init.php');
 //地址与接口，即创建socket时需要服务器的IP和端口
-$sk=new Sock('10.122.7.30',8000);
+$sk=new Sock('0.0.0.0',8000);
 
 //对创建的socket循环进行监听，处理数据
 $sk->run();
@@ -222,7 +222,7 @@ class Sock{
         $ar['msg']='wrong token!';
       else if($he=$this->getKey($g['weixin']))
         //禁止一个微信号再次连接
-        $ar['msg']='same weixin!'; 
+        $ar['msg']='same weixin!';
 
       if($ar['msg']){
         //返回错误信息并关闭该socket
